@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/date_picker_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <!-- Restaurant Name -->
+        <TextView
+            android:id="@+id/tvRestaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="LAWLESS BURGER BAR JAKARTA"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <!-- Restaurant Image -->
+
+        <!-- Icon LinearLayout -->
+
+        <ImageView
+            android:id="@+id/ivRestaurantImage"
+            android:layout_width="380dp"
+            android:layout_height="210dp"
+            android:layout_below="@id/tvRestaurantName"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lawless" />
+
+        <LinearLayout
+            android:id="@+id/iconfieww"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivRestaurantImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp">
+
+            <!-- Email Icon -->
+            <ImageView
+                android:id="@+id/ivEmailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_email"
+                android:layout_marginEnd="60dp" />
+
+            <!-- Phone Icon -->
+            <ImageView
+                android:id="@+id/ivPhoneIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone"
+                android:layout_marginEnd="60dp" />
+
+            <!-- Map Icon -->
+            <ImageView
+                android:id="@+id/ivMapIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_map" />
+
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconfieww"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Restaurant Description"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Description Paragraph -->
+        <TextView
+            android:id="@+id/tvParagraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:text="Lawless Burgerbar adalah sebuah perpaduan nongkrong yang enak; menikmati burger dengan iringan playlist musik rock, sebuah kombinasi yang tidak pernah atau jarang sekali ditemukan di Indonesia"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+
+        <!-- Menu List Title -->
+        <TextView
+            android:id="@+id/list_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvParagraph"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="List Menu"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Menu List Description -->
+        <TextView
+            android:id="@+id/tvParagraph1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_menu"
+            android:text="Beberapa contoh menu dari Lawless Burger Bar:"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/listsatu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvParagraph1"
+            android:text="1. Beef Burger"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/listdua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listsatu"
+            android:text="2. Galich Chicken Rice"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/listtiga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listdua"
+            android:text="3. French Fries"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/listepat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listtiga"
+            android:text="4. Flurry Oreo"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/listalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listepat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Alamat"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvParagraph2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listalamat"
+            android:text="Jl. H. Agus Salim No.60, RT.8/RW.4, Gondangdia, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10230"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            tools:ignore="ExtraText" />
+
+
+<!--jam buka-->
+        <TextView
+            android:id="@+id/jambuka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvParagraph2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Jam Buka :"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/listsatuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jambuka"
+            android:text="= Senin 08:00 - 18:00"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/listduaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listsatuu"
+            android:text=" = Selasa 08:00 - 18:00 "
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/listtigaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listduaa"
+            android:text=" = Rabu 08:00 - 18:00"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/listepatt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listtigaa"
+            android:text=" = Kamis 08:00 - 18:00"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/listlima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listepatt"
+            android:text=" = Jumat 08:00 - 18:00"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/listenam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listlima"
+            android:text=" = Sabtu 08:00 - 18:00"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/listtuju"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listenam"
+            android:text=" = Minggu 08:00 - 23:00"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+</ScrollView>
